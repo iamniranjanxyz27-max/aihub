@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AI Hub</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="brand">AI Hub</div>
+  </header>
+
+  <div class="container">
+    <!-- Sidebar for main categories -->
+    <aside class="sidebar">
+      <h4>Main Categories</h4>
+      <div class="main-cats">
+        <button data-cat="All" class="main-btn active">All</button>
+        <button data-cat="Text" class="main-btn">Text</button>
+        <button data-cat="Image" class="main-btn">Image</button>
+        <button data-cat="Video" class="main-btn">Video</button>
+        <button data-cat="Audio" class="main-btn">Audio</button>
+        <button data-cat="Editing" class="main-btn">Editing</button>
+        <button data-cat="Code" class="main-btn">Code</button>
+      </div>
+    </aside>
+
+    <main class="main">
+      <!-- Search bar centered on page -->
+      <div class="page-search-container">
+        <input id="search" class="search" placeholder="Search AI tools..." />
+      </div>
+
+      <!-- Subcategory buttons -->
+      <div class="subcats" id="subcats"></div>
+      <div class="info-row"></div>
+
+      <!-- Cards grid -->
+      <section id="cards" class="cards-grid" aria-live="polite"></section>
+    </main>
+  </div>
+
+  <footer class="footer">
+    <small>Contact us</small>
+    <small>Email: itsmeniranjan27@gmail.com</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
